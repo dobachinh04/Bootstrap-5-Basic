@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 1 - Bài 1 - PH32744</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main class="container mt-3">
+      <ul class="nav nav-pills" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active border rounded"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            <i class="fa-solid fa-pen-to-square"></i> Cập Nhật
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link border rounded"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            <i class="fa-solid fa-list"></i> Danh Sách
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+          tabindex="0"
+        >
+          <div class="card" style="width: 100%">
+            <div class="card-header h4">
+              <i class="fa-solid fa-pen-to-square"></i> Nhập Tháng Lương 12
+            </div>
+            <form class="row container mt-3">
+              <div class="mb-3 col-6">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Mã Nhân Viên</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3 col-6">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Họ và Tên</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+
+              <div class="mb-3 col-6">
+                <label class="form-label">Câu Lạc Bộ</label>
+                <select
+                  class="form-select"
+                  id="genderSelect"
+                  aria-label="Default select example"
+                >
+                  <option selected disabled>Đà Nẵng</option>
+                  <option value="nam">Cần Thơ</option>
+                  <option value="nu">HCM</option>
+                </select>
+              </div>
+              <div class="mb-3 col-6">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Lương</label
+                >
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Amount (to the nearest dollar)"
+                  />
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+              <div class="mb-3 col-6">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Thưởng</label
+                >
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Amount (to the nearest dollar)"
+                  />
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+              <div class="mb-3 col-6">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Phụ Cấp</label
+                >
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Amount (to the nearest dollar)"
+                  />
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+
+              <div class="mb-3 col-12">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Ghi Chú</label
+                >
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                  <label for="floatingTextarea2"></label>
+                </div>
+              </div>
+
+              <div class="row ms-1 mb-5">
+                <button type="submit" class="btn col-1 me-2 border rounded">
+                  <i class="fa-solid fa-check"></i> Lưu
+                </button>
+                <button type="submit" class="btn col-1 border rounded">
+                  <i class="fa-solid fa-square"></i> Hủy
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <div class="card" style="width: 100%">
+            <div class="card-header h4">
+              <i class="fa-solid fa-list"></i> Bảng Lương Tháng 12
+            </div>
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th rowspan="2" scope="col">Mã NV</th>
+                  <th rowspan="2" scope="col">Họ và Tên</th>
+                  <th colspan="3" scope="col">Thu Nhập</th>
+                </tr>
+                <tr>
+                  <th scope="col">Lương</th>
+                  <th scope="col">Thưởng</th>
+                  <th scope="col">Phụ Cấp</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">NV100</th>
+                  <td>Nguyễn Công Phượng</td>
+                  <td>5000000</td>
+                  <td>5000000</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th scope="row">NV102</th>
+                  <td>Phan Văn Tài Em</td>
+                  <td>9000000</td>
+                  <td>6000000</td>
+                  <td>1000000</td>
+                </tr>
+                <tr>
+                  <th scope="row">NV103</th>
+                  <td>Lê Đức Huỳnh</td>
+                  <td>7000000</td>
+                  <td>3000000</td>
+                  <td>2000000</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card-header">
+              Lương của các cầu thủ huấn luyện viên chuyên nghiệp
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/9cc1e5b793.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
