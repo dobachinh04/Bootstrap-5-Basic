@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AngularJS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <!--* ng-app dùng để định nghĩa vùng sử dụng angularjs -->
+  <body ng-app="myApp" class="container mt-5">
+    <div ng-controller="demoController">
+      <h1>Đây là render dữ liệu: {{hello}}</h1>
+      <h1 ng-bind="hello"></h1>
+    </div>
+
+    <div ng-controller="listStudent">
+      <hr />
+      <h1>{{title}}</h1>
+      <table class="table table-striped table-hover">
+        <thead>
+          <th>ID</th>
+          <th>Họ Tên</th>
+          <th>Tuổi</th>
+          <th>Lớp</th>
+        </thead>
+
+        <tbody ng-repeat="student in listStudent">
+          <tr>
+            <td>{{$index + 1}}</td>
+            <td>{{student.hoTen}}</td>
+            <td>{{student.tuoi}}</td>
+            <td>{{student.lop}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="./libraries/angular.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Khởi tạo vùng - module
+      let data = angular.module("myApp", []);
+      // 2 tham số (tên của ng-app, thành phần phụ thuộc)
+
+      // Khởi tạo vùng - controller
+      data.controller("demoController", myFunction);
+      // demoController là tên của controller
+      // myFunction là tên của function được dùng trong controller
+
+      function myFunction($scope) {
+        // $scope luôn luôn phải có
+
+        // Khai báo biến
+        // let hello = 'Xin Chào'
+        $scope.hello = "Đỗ Bá Chính";
+        console.log($scope.hello);
+      }
+
+      data.controller("listStudent", studentFunction);
+
+      function studentFunction($scope) {
+        $scope.title = "Danh Sách Sinh Viên";
+        $scope.listStudent = [
+          {
+            hoTen: "Nguyễn Văn A",
+            tuoi: 20,
+            lop: "WD18315",
+          },
+          {
+            hoTen: "Nguyễn Văn B",
+            tuoi: 20,
+            lop: "WD18315",
+          },
+          {
+            hoTen: "Nguyễn Văn C",
+            tuoi: 20,
+            lop: "WD18315",
+          },
+        ];
+      }
+    </script>
+  </body>
+</html>
