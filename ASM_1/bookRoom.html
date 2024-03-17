@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body ng-app="myApp">
+    <div ng-controller="bookroomtitle">
+      <title>ASM 1 - {{bookroomtitle}}</title>
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/FPT_Polytechnic.png/800px-FPT_Polytechnic.png?20200416064027"
+              alt=""
+              width="150"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Trang Chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./bookRoom.html ">Đặt Phòng</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">Liên Hệ</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Tìm Kiếm"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">Tìm</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mt-3">
+        <h1 class="mb-3" ng-controller="bookroomtitle">{{bookroomtitle}}</h1>
+        <form>
+          <div class="row">
+            <div class="col-6 mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Họ và Tên</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Họ và Tên"
+              />
+            </div>
+            <div class="col-6 mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Chứng Minh Thư</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="0123456789"
+              />
+            </div>
+            <div class="col-12 mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="example@gmail.com"
+              />
+            </div>
+            <div class="col-12 my-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Giới Tính:</label
+              >
+              <div class="form-check form-check-inline ms-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Nam
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Nữ
+                </label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Số Điện Thoại</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="0123456789"
+              />
+            </div>
+            <div class="col-6 mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Ngày Sinh</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="DD/MM/YYYY"
+              />
+            </div>
+
+            <div class="mb-3 col-6">
+              <label for="genderSelect" class="form-label"
+                >Địa Điểm Khách Sạn</label
+              >
+              <select
+                class="form-select"
+                id="genderSelect"
+                aria-label="Default select example"
+              >
+                <option selected disabled>Hà Nội</option>
+                <option value="1">Hồ Chí Minh</option>
+                <option value="2">Đà Nẵng</option>
+              </select>
+            </div>
+
+            <div class="col-6 mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Số Người</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="..."
+              />
+            </div>
+
+            <div class="mb-3 col-12">
+              <label for="genderSelect" class="form-label"
+                >Phương Thức Thanh Toán</label
+              >
+              <select
+                class="form-select"
+                id="genderSelect"
+                aria-label="Default select example"
+              >
+                <option selected disabled>COD - Trả Tiền Khi Nhận Phòng</option>
+                <option value="1">Chuyển Khoản</option>
+                <option value="2">Momo</option>
+                <option value="2">ZaloPay</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Đặt Phòng</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./libraries/angular.min.js"></script>
+    <script>
+      let data = angular.module("myApp", []);
+
+      data.controller("bookroomtitle", myFunction);
+      function myFunction($scope) {
+        $scope.bookroomtitle = "Đặt Phòng Khách Sạn";
+      }
+    </script>
+  </body>
+</html>
