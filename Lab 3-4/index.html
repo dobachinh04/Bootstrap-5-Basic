@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trang Chủ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body ng-app="myApp">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/FPT_Polytechnic.png/800px-FPT_Polytechnic.png?20200416064027"
+              alt=""
+              width="150"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Danh Sách Sinh Viên</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./add.html"
+                  >Thêm Mới</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Tìm Kiếm"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">Tìm</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5" ng-controller="listStudent">
+      <h1>{{title}}</h1>
+      <a href="./add.html"
+        ><button class="btn btn-primary my-3">Thêm Mới</button></a
+      >
+      <table class="table table-striped table-hover table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Mã Sinh Viên</th>
+            <th scope="col">Họ Tên</th>
+            <th scope="col">Quê Quán</th>
+            <th scope="col">Giới Tính</th>
+            <th scope="col" class="text-center">Hành Động</th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="student in listStudent">
+          <tr>
+            <th scope="row">{{$index + 1}}</th>
+            <td>{{student.name}}</td>
+            <td>{{student.studentID}}</td>
+            <td>{{student.from}}</td>
+            <td>{{student.gender == 1 ? "Nam" : "Nữ"}}</td>
+            <td class="text-center">
+              <button class="btn btn-primary" ng-click="info(student.name)">
+                Xem Chi Tiết
+              </button>
+              <a href="./update.html"
+                ><button class="btn btn-warning">Sửa</button></a
+              >
+              <button class="btn btn-danger" ng-click="confirmDelete()">
+                Xóa
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="./libraries/angular.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      let data = angular.module("myApp", []);
+
+      data.controller("listStudent", studentFunction);
+
+      function studentFunction($scope) {
+        $scope.title = "Danh Sách Sinh Viên";
+
+        $scope.confirmDelete = function () {
+          if (confirm("Bạn có chắc là muốn xóa không?")) {
+          }
+        };
+
+        // $scope.viewDetail = function (studentID) {
+        //   window.location.href = "detail.html?id=" + studentID;
+        // };
+
+        $scope.info = function ($name) {
+          alert("Họ Tên của bạn là: " + $name);
+        };
+
+        $scope.listStudent = [
+          {
+            name: "Nguyễn Văn A",
+            studentID: "Ph32744",
+            from: "Hà Nội",
+            gender: 1,
+          },
+          {
+            name: "Nguyễn Văn B",
+            studentID: "PH42250",
+            from: "Sài Gòn",
+            gender: 1,
+          },
+          {
+            name: "Nguyễn Văn C",
+            studentID: "Ph12654",
+            from: "Bến Tre",
+            gender: 2,
+          },
+        ];
+      }
+    </script>
+  </body>
+</html>
