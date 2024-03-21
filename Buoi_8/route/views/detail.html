@@ -1,0 +1,10 @@
+<main class="container mt-5">
+  <h1>Chi Tiết Sinh Viên</h1>
+  <div ng-controller="listStudent">
+    <p><strong>Họ Tên:</strong> {{student.name}}</p>
+    <p><strong>Mã Sinh Viên:</strong> {{student.studentID}}</p>
+    <p><strong>Quê Quán:</strong> {{student.from}}</p>
+    <p><strong>Giới Tính:</strong> {{student.gender == 1 ? "Nam" : "Nữ"}}</p>
+  </div>
+  <a href="index.html" class="btn btn-secondary">Quay Lại</a>
+</main>

@@ -1,0 +1,30 @@
+<h1>{{title}}</h1>
+<a href="#!/Them-Moi"><button class="btn btn-primary my-3">Thêm Mới</button></a>
+<table class="table table-striped table-hover table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Mã Sinh Viên</th>
+      <th scope="col">Họ Tên</th>
+      <th scope="col">Quê Quán</th>
+      <th scope="col">Giới Tính</th>
+      <th scope="col" class="text-center">Hành Động</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="student in listStudent">
+    <tr>
+      <th scope="row">{{$index + 1}}</th>
+      <td>{{student.name}}</td>
+      <td>{{student.studentID}}</td>
+      <td>{{student.from}}</td>
+      <td>{{student.gender == 1 ? "Nam" : "Nữ"}}</td>
+      <td class="text-center">
+        <a href="#!/Chi-Tiet"
+          ><button class="btn btn-primary">Xem Chi Tiết</button></a
+        >
+        <a href="#!/Cap-Nhat"><button class="btn btn-warning">Sửa</button></a>
+        <button class="btn btn-danger" ng-click="confirmDelete()">Xóa</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
