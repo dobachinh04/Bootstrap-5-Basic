@@ -1,0 +1,27 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Do Ba Chinh",
+      "studentID": "PH32744",
+      "from": "Ha Noi",
+      "gender": "1"
+    },
+
+    {
+      "id": "2",
+      "name": "Nguyen Duc Chung",
+      "studentID": "PH32744",
+      "from": "Ha Noi",
+      "gender": "1"
+    },
+
+    {
+      "id": "3",
+      "name": "Nguyen Duc Chung",
+      "studentID": "PH32744",
+      "from": "Ha Noi",
+      "gender": "1"
+    }
+  ]
+}
