@@ -1,0 +1,32 @@
+{
+  "book": [
+    {
+      "id": "1",
+      "title": "Lão Hạc",
+      "quantity": 17,
+      "price": 700,
+      "type": "Văn Học"
+    },
+    {
+      "id": "2",
+      "title": "Doraemon",
+      "quantity": 52,
+      "price": 200,
+      "type": "Truyện Tranh"
+    },
+    {
+      "id": "3",
+      "title": "Dragon Ball",
+      "quantity": 20,
+      "price": 500,
+      "type": "Truyện Tranh"
+    },
+    {
+      "id": "4",
+      "title": "Sherlock Holmes",
+      "quantity": 160,
+      "price": 100,
+      "type": "Trinh Thám"
+    }
+  ]
+}
