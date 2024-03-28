@@ -1,10 +1,43 @@
-<main class="container mt-5">
-  <h1>Chi Tiết Sinh Viên</h1>
-  <div ng-controller="listStudent">
-    <p><strong>Họ Tên:</strong> {{student.name}}</p>
-    <p><strong>Mã Sinh Viên:</strong> {{student.studentID}}</p>
-    <p><strong>Quê Quán:</strong> {{student.from}}</p>
-    <p><strong>Giới Tính:</strong> {{student.gender == 1 ? "Nam" : "Nữ"}}</p>
+<h1>{{title}}</h1>
+<form ng-submit="updateStudent()">
+  <div class="row">
+    <div class="mb-3 col-6">
+      <label for="exampleInputEmail1" class="form-label">Họ Tên</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Nguyễn Văn A"
+        ng-model="student.name" disabled
+      />
+    </div>
+    <div class="mb-3 col-6">
+      <label for="exampleInputPassword1" class="form-label">Mã Sinh Viên</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="PH32744"
+        ng-model="student.studentID" disabled
+      />
+    </div>
+    <div class="mb-3 col-6">
+      <label for="exampleInputPassword1" class="form-label">Quê Quán:</label>
+      <select class="form-select" aria-label="Default select example" ng-model="student.from" disabled>
+        <option value="1">Hà Nội</option>
+        <option value="2">Hồ Chí Minh</option>
+        <option value="3">Đà Nẵng</option>
+      </select>
+    </div>
+    <div class="mb-3 col-6">
+      <label for="exampleInputPassword1" class="form-label">Giới Tính:</label>
+      <select class="form-select" aria-label="Default select example" ng-model="student.gender" disabled>
+        <option value="1">Nam</option>
+        <option value="2">Nữ</option>
+      </select>
+    </div>
+    </div>
   </div>
-  <a href="index.html" class="btn btn-secondary">Quay Lại</a>
-</main>
+  <a href="#!/Trang-Chu" class="btn btn-secondary"><-- Quay Lại</a>
+</form>

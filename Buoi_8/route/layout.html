@@ -22,7 +22,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#!/index.html"
+          <a class="navbar-brand" href="#!/Trang-Chu"
             ><img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/FPT_Polytechnic.png/800px-FPT_Polytechnic.png?20200416064027"
               alt=""
@@ -45,7 +45,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="#!/index.html"
+                  href="#!/Trang-Chu"
                   >Danh Sách Sinh Viên</a
                 >
               </li>
@@ -79,7 +79,11 @@
     <!-- Bootstrap JavaScript Libraries -->
     <script src="../libraries/angular.min.js"></script>
     <script src="../libraries/angular-route.min.js"></script>
+
     <script src="./controller/indexController.js"></script>
+    <script src="./controller/addController.js"></script>
+    <script src="./controller/updateController.js"></script>
+    <script src="./controller/detailController.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -113,21 +117,21 @@
             "/Them-Moi", // Đặt tên cho Route
             {
               templateUrl: "./views/add.html",
-              // Đường dẫn Route
+              controller: addStudent,
             }
           )
           .when(
-            "/Cap-Nhat", // Đặt tên cho Route
+            "/Cap-Nhat/:id", // Đặt tên cho Route
             {
               templateUrl: "./views/update.html",
-              // Đường dẫn Route
+              controller: updateStudent,
             }
           )
           .when(
-            "/Chi-Tiet", // Đặt tên cho Route
+            "/Chi-Tiet/:id", // Đặt tên cho Route
             {
               templateUrl: "./views/detail.html",
-              // Đường dẫn Route
+              controller: detailStudent,
             }
           )
           .otherwise({

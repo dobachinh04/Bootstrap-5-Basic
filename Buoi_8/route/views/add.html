@@ -1,58 +1,44 @@
-  <h1>Thêm Mới Sinh Viên</h1>
-  <form>
-    <div class="row">
-      <div class="mb-3 col-6">
-        <label for="exampleInputEmail1" class="form-label">Họ Tên</label>
-        <input
-          type="text"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-          placeholder="Nguyễn Văn A"
-        />
-      </div>
-      <div class="mb-3 col-6">
-        <label for="exampleInputPassword1" class="form-label"
-          >Mã Sinh Viên</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="exampleInputPassword1"
-          placeholder="PH32744"
-        />
-      </div>
-      <div class="mb-3 col-6">
-        <label for="exampleInputPassword1" class="form-label">Quê Quán:</label>
-        <select class="form-select" aria-label="Default select example">
-          <option value="1">Hà Nội</option>
-          <option value="2">Hồ Chí Minh</option>
-          <option value="3">Đà Nẵng</option>
-        </select>
-      </div>
-      <div class="col-6 mt-5">
-        <label for="exampleInputPassword1" class="form-label">Giới Tính:</label>
-        <div class="form-check form-check-inline ms-2">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1"> Nam </label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            checked
-          />
-          <label class="form-check-label" for="flexRadioDefault2"> Nữ </label>
-        </div>
-      </div>
+<h1>{{title}}</h1>
+<form action="" ng-submit="addStudent()">
+  <div class="row">
+    <div class="mb-3 col-6">
+      <label for="exampleInputEmail1" class="form-label">Họ Tên</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Nguyễn Văn A"
+        ng-model="student.name"
+      />
     </div>
-    <a href="#!/Trang-Chu" class="btn btn-secondary"><-- Quay Lại</a>
-    <button type="submit" class="btn btn-primary">Thêm Mới</button>
-  </form>
+    <div class="mb-3 col-6">
+      <label for="exampleInputPassword1" class="form-label">Mã Sinh Viên</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="PH32744"
+        ng-model="student.studentID"
+      />
+    </div>
+    <div class="mb-3 col-6">
+      <label for="exampleInputPassword1" class="form-label">Quê Quán:</label>
+      <select class="form-select" aria-label="Default select example" ng-model="student.from">
+        <option value="1">Hà Nội</option>
+        <option value="2">Hồ Chí Minh</option>
+        <option value="3">Đà Nẵng</option>
+      </select>
+    </div>
+    <div class="mb-3 col-6">
+      <label for="exampleInputPassword1" class="form-label">Giới Tính:</label>
+      <select class="form-select" aria-label="Default select example" ng-model="student.gender">
+        <option value="1">Nam</option>
+        <option value="2">Nữ</option>
+      </select>
+    </div>
+    </div>
+  </div>
+  <a href="#!/Trang-Chu" class="btn btn-secondary"><-- Quay Lại</a>
+  <button type="submit" class="btn btn-primary">Thêm Mới</button>
+</form>

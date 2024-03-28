@@ -7,21 +7,36 @@
       "from": "Ha Noi",
       "gender": "1"
     },
-
     {
-      "id": "2",
-      "name": "Nguyen Duc Chung",
-      "studentID": "PH32744",
-      "from": "Ha Noi",
-      "gender": "1"
+      "id": "2"
     },
-
     {
       "id": "3",
       "name": "Nguyen Duc Chung",
       "studentID": "PH32744",
       "from": "Ha Noi",
       "gender": "1"
+    },
+    {
+      "id": "4",
+      "name": "Nguyen Duc Chung",
+      "studentID": "PH32744",
+      "from": "Ha Noi",
+      "gender": "2"
+    },
+    {
+      "id": "5",
+      "name": "Nguyen Duc Chung",
+      "studentID": "PH32744",
+      "from": "Ha Noi",
+      "gender": "2"
+    },
+    {
+      "id": "3630",
+      "name": "a",
+      "studentID": "a",
+      "from": "3",
+      "gender": "2"
     }
   ]
 }
