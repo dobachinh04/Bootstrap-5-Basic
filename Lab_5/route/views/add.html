@@ -1,0 +1,54 @@
+<h1>{{title}}</h1>
+<form ng-submit="addController()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Họ Tên</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      ng-model="nguoiYeu.hoTen"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Giới Tính</label>
+    <select
+      class="form-select"
+      aria-label="Default select example"
+      ng-model="nguoiYeu.gioiTinh"
+    >
+      <option value="Nam">Nam</option>
+      <option value="Nữ">Nữ</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Năm Sinh</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputPassword1"
+      ng-model="nguoiYeu.namSinh"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Quê Quán</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputPassword1"
+      ng-model="nguoiYeu.queQuan"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Số Điện Thoại</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputPassword1"
+      ng-model="nguoiYeu.SDT"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Thêm Mới</button>
+</form>

@@ -8,9 +8,10 @@
         class="form-control"
         id="exampleInputEmail1"
         aria-describedby="emailHelp"
-        placeholder="Nguyễn Văn A"
+        placeholder="Example: Đỗ Bá Chính"
         ng-model="student.name"
       />
+      <span class="text-danger fw-bold" ng-if="checkform.name">Vui lòng nhập Họ Tên!</span>
     </div>
     <div class="mb-3 col-6">
       <label for="exampleInputPassword1" class="form-label">Mã Sinh Viên</label>
@@ -18,17 +19,19 @@
         type="text"
         class="form-control"
         id="exampleInputPassword1"
-        placeholder="PH32744"
+        placeholder="Example: PH32744"
         ng-model="student.studentID"
       />
+      <span class="text-danger fw-bold" ng-if="checkform.studentID">Vui lòng nhập Mã Sinh Viên!</span>
     </div>
     <div class="mb-3 col-6">
       <label for="exampleInputPassword1" class="form-label">Quê Quán:</label>
       <select class="form-select" aria-label="Default select example" ng-model="student.from">
-        <option value="1">Hà Nội</option>
-        <option value="2">Hồ Chí Minh</option>
-        <option value="3">Đà Nẵng</option>
+        <option value="Hà Nội">Hà Nội</option>
+        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+        <option value="Đà Nẵng">Đà Nẵng</option>
       </select>
+      <span class="text-danger fw-bold" ng-if="checkform.from">Vui lòng chọn Quê Quán!</span>
     </div>
     <div class="mb-3 col-6">
       <label for="exampleInputPassword1" class="form-label">Giới Tính:</label>
@@ -36,6 +39,7 @@
         <option value="1">Nam</option>
         <option value="2">Nữ</option>
       </select>
+      <span class="text-danger fw-bold" ng-if="checkform.gender">Vui lòng chọn Giới Tính!</span>
     </div>
     </div>
   </div>
