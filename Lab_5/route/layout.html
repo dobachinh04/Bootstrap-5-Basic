@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Hello</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -97,6 +97,10 @@
           .when("/Them-Moi", {
             templateUrl: "./views/add.html",
             controller: addController,
+          })
+          .when("/Cap-Nhat/:id", {
+            templateUrl: "./views/update.html",
+            controller: updateController,
           })
           .otherwise({
             redirectTo: "/Trang-Chu",

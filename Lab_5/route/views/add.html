@@ -1,4 +1,4 @@
-<h1>{{title}}</h1>
+<h1 class="text-center">{{title}}</h1>
 <form ng-submit="addController()">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Họ Tên</label>
@@ -9,6 +9,9 @@
       aria-describedby="emailHelp"
       ng-model="nguoiYeu.hoTen"
     />
+    <span class="text-danger fw-bold" ng-if="checkForm.hoTen"
+      >Vui lòng nhập Họ Tên!</span
+    >
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Giới Tính</label>
@@ -20,6 +23,9 @@
       <option value="Nam">Nam</option>
       <option value="Nữ">Nữ</option>
     </select>
+    <span class="text-danger fw-bold" ng-if="checkForm.gioiTinh"
+      >Vui lòng nhập Giới Tính!</span
+    >
   </div>
 
   <div class="mb-3">
@@ -30,6 +36,9 @@
       id="exampleInputPassword1"
       ng-model="nguoiYeu.namSinh"
     />
+    <span class="text-danger fw-bold" ng-if="checkForm.namSinh"
+      >Vui lòng nhập Năm Sinh!</span
+    >
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Quê Quán</label>
@@ -39,6 +48,9 @@
       id="exampleInputPassword1"
       ng-model="nguoiYeu.queQuan"
     />
+    <span class="text-danger fw-bold" ng-if="checkForm.queQuan"
+      >Vui lòng nhập Quê Quán!</span
+    >
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Số Điện Thoại</label>
@@ -48,7 +60,13 @@
       id="exampleInputPassword1"
       ng-model="nguoiYeu.SDT"
     />
+    <span class="text-danger fw-bold" ng-if="checkForm.SDT"
+      >Vui lòng nhập Số Điện Thoại!</span
+    >
   </div>
 
+  <a href="#!/Trang-Chu"
+    ><button type="submit" class="btn btn-secondary"><-- Quay Lại</button></a
+  >
   <button type="submit" class="btn btn-primary">Thêm Mới</button>
 </form>
