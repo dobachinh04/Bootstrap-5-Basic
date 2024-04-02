@@ -1,0 +1,32 @@
+<h1>{{title}}</h1>
+
+<a href="#!/Them-Moi" class="btn btn-primary my-3">Thêm Mới</a>
+
+<table class="table table-bordered table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Mã</th>
+      <th scope="col">Tên</th>
+      <th scope="col">Loại</th>
+      <th scope="col">Giá</th>
+      <th scope="col">Số Lượng</th>
+      <th scope="col">Hành Động</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="book in bookList">
+    <tr>
+      <th scope="row">{{book.id}}</th>
+      <td>{{book.bookID}}</td>
+      <td>{{book.name}}</td>
+      <td>{{book.type}}</td>
+      <td>{{book.price}}</td>
+      <td>{{book.quantity}}</td>
+      <td>
+        <a href=""></a><button class="btn btn-primary">Chi Tiết</button></a>
+        <a href=""><button class="btn btn-warning">Sửa</button></a>
+        <button class="btn btn-danger" ng-click="deleteBook(book.id)">Xóa</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
