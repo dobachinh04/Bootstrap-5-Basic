@@ -1,36 +1,76 @@
 {
   "book": [
     {
-      "id": "1",
-      "bookID": "A001",
-      "name": "Lão Hạc",
+      "bookID": "A003",
+      "name": "Những Ngôi Sao Xa Xôi",
       "type": "Văn Học",
-      "price": 100,
-      "quantity": 10
+      "price": "20,000",
+      "quantity": "5",
+      "id": "1"
     },
     {
-      "id": "1",
       "bookID": "A001",
-      "name": "Lão Hạc",
+      "name": "Lão Hạc và Cậu Vàng",
       "type": "Văn Học",
-      "price": 100,
-      "quantity": 10
+      "price": "100,000",
+      "quantity": 10,
+      "id": "2"
     },
     {
-      "id": "1",
-      "bookID": "A001",
-      "name": "Lão Hạc",
-      "type": "Văn Học",
-      "price": 100,
-      "quantity": 10
+      "bookID": "A002",
+      "name": "Doraemon Chú Mèo Máy Đến Từ Tương Lai",
+      "type": "Truyện Tranh",
+      "price": "10,000",
+      "quantity": 10,
+      "id": "3"
     },
     {
-      "id": "af09",
+      "id": "4",
       "bookID": "haha",
       "name": "hah",
       "type": "ahah",
       "price": 2,
       "quantity": 1
+    },
+    {
+      "bookID": "ga",
+      "name": "ád",
+      "type": "ád",
+      "price": 23,
+      "quantity": 23,
+      "id": "5"
+    },
+    {
+      "bookID": "gaga",
+      "name": "ád",
+      "type": "ew3",
+      "price": 324,
+      "quantity": 342,
+      "id": "c483"
+    },
+    {
+      "id": "3c2a",
+      "bookID": "hah",
+      "name": "aha",
+      "type": "ha",
+      "price": 4,
+      "quantity": 4
+    },
+    {
+      "id": "cbdb",
+      "bookID": "á",
+      "name": "á",
+      "type": "âs",
+      "price": 23,
+      "quantity": 23
+    },
+    {
+      "id": "9d50",
+      "bookID": "ád",
+      "name": "1234567890",
+      "type": "ád",
+      "price": 43,
+      "quantity": 435
     }
   ]
 }

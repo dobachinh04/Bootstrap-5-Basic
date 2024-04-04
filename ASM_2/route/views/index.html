@@ -14,18 +14,24 @@
       <th scope="col">Hành Động</th>
     </tr>
   </thead>
-  <tbody ng-repeat="book in bookList">
+  <tbody ng-repeat="book in bookList | filter: tuKhoa">
     <tr>
-      <th scope="row">{{book.id}}</th>
+      <th scope="row">{{$index + 1}}</th>
       <td>{{book.bookID}}</td>
       <td>{{book.name}}</td>
       <td>{{book.type}}</td>
       <td>{{book.price}}</td>
       <td>{{book.quantity}}</td>
       <td>
-        <a href=""></a><button class="btn btn-primary">Chi Tiết</button></a>
-        <a href=""><button class="btn btn-warning">Sửa</button></a>
-        <button class="btn btn-danger" ng-click="deleteBook(book.id)">Xóa</button>
+        <a href="#!/Chi-Tiet/{{book.id}}"
+          ><button class="btn btn-primary">Chi Tiết</button></a
+        >
+        <a href="#!/Cap-Nhat/{{book.id}}"
+          ><button class="btn btn-warning">Sửa</button></a
+        >
+        <button class="btn btn-danger" ng-click="deleteBook(book.id)">
+          Xóa
+        </button>
       </td>
     </tr>
   </tbody>

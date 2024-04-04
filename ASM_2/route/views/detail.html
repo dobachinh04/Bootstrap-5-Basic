@@ -1,0 +1,72 @@
+<h1>{{title}}</h1>
+<form ng-submit="updateBook()">
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Mã Sách</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputPassword1"
+      ng-model="book.bookID"
+      disabled
+    />
+    <span class="text-danger fw-bold" ng-if="checkForm.bookID"
+      >Vui lòng nhập Mã Sách!</span
+    >
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Tên Sách</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputPassword1"
+      ng-model="book.name"
+      disabled
+    />
+    <span class="text-danger fw-bold" ng-if="checkForm.name"
+      >Vui lòng nhập Tên Sách!</span
+    >
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Loại Sách</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputPassword1"
+      ng-model="book.type"
+      disabled
+    />
+    <span class="text-danger fw-bold" ng-if="checkForm.bookID"
+      >Vui lòng nhập Loại Sách!</span
+    >
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Giá Sách</label>
+    <input
+      type="number"
+      class="form-control"
+      id="exampleInputPassword1"
+      ng-model="book.price"
+      disabled
+    />
+    <span class="text-danger fw-bold" ng-if="checkForm.price"
+      >Vui lòng nhập Giá Sách!</span
+    >
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Số Lượng Sách</label>
+    <input
+      type="number"
+      class="form-control"
+      id="exampleInputPassword1"
+      ng-model="book.quantity"
+      disabled
+    />
+    <span class="text-danger fw-bold" ng-if="checkForm.quantity"
+      >Vui lòng nhập Số Lượng Sách!</span
+    >
+  </div>
+</form>

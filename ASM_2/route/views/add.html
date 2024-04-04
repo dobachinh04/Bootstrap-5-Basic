@@ -22,7 +22,7 @@
       ng-model="book.name"
     />
     <span class="text-danger fw-bold" ng-if="checkForm.name"
-      >Vui lòng nhập Tên Sách!</span
+      >Vui lòng nhập Tên Sách, Tên sách phải trên 10 ký tự!</span
     >
   </div>
 
@@ -42,26 +42,26 @@
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Giá Sách</label>
     <input
-      type="number"
+      type="text"
       class="form-control"
       id="exampleInputPassword1"
       ng-model="book.price"
     />
     <span class="text-danger fw-bold" ng-if="checkForm.price"
-      >Vui lòng nhập Giá Sách!</span
+      >Vui lòng nhập Giá Sách, giá sách phải trên 10.000!</span
     >
   </div>
 
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Số Lượng Sách</label>
     <input
-      type="number"
+      type="text"
       class="form-control"
       id="exampleInputPassword1"
       ng-model="book.quantity"
     />
     <span class="text-danger fw-bold" ng-if="checkForm.quantity"
-      >Vui lòng nhập Số Lượng Sách!</span
+      >Vui lòng nhập Số Lượng Sách, Số lượng sách phải là số!</span
     >
   </div>
 

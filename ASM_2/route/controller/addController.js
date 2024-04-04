@@ -17,7 +17,7 @@ window.addController = function ($scope, $http, $location) {
       $scope.checkForm.bookID = true;
     }
 
-    if (!$scope.book || !$scope.book.name) {
+    if (!$scope.book || !$scope.book.name || $scope.book.name.length < 10) {
       check = false;
       $scope.checkForm.name = true;
     }
@@ -27,12 +27,22 @@ window.addController = function ($scope, $http, $location) {
       $scope.checkForm.type = true;
     }
 
-    if (!$scope.book || !$scope.book.price) {
+    if (
+      !$scope.book ||
+      !$scope.book.price ||
+      $scope.book.price <= 10000 ||
+      isNaN($scope.book.quantity)
+    ) {
       check = false;
       $scope.checkForm.price = true;
     }
 
-    if (!$scope.book || !$scope.book.quantity) {
+    if (
+      !$scope.book ||
+      !$scope.book.quantity ||
+      isNaN($scope.book.quantity) ||
+      $scope.book.quantity <= 0
+    ) {
       check = false;
       $scope.checkForm.quantity = true;
     }
