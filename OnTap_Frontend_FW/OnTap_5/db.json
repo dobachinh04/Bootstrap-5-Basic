@@ -1,0 +1,28 @@
+{
+  "employee": [
+    {
+      "ho_ten": "Đỗ Bá Chính",
+      "sdt": "123456789",
+      "email": "dobachinh04@gmail.com",
+      "chuc_vu": "Nhân viên",
+      "ngay_sinh": "2004-01-01",
+      "id": "1"
+    },
+    {
+      "ho_ten": "Đỗ Bá Chính",
+      "sdt": "123456789",
+      "email": "dobachinh04@gmail.com",
+      "chuc_vu": "Trưởng phòng",
+      "ngay_sinh": "2004-01-01",
+      "id": "2"
+    },
+    {
+      "ho_ten": "ádád",
+      "sdt": "ádád",
+      "email": "ádád",
+      "chuc_vu": "Trưởng phòng",
+      "ngay_sinh": "2024-04-25",
+      "id": "91c2"
+    }
+  ]
+}

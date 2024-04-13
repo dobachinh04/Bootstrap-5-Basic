@@ -1,0 +1,60 @@
+{
+  "post": [
+    {
+      "id": "7b97",
+      "tieu_de": "a",
+      "noi_dung": "a",
+      "tac_gia": "a",
+      "the_loai": "Tin tức",
+      "ngay_dang": "2024-04-12T17:00:00.000Z"
+    },
+    {
+      "id": "6ae4",
+      "tieu_de": "a",
+      "noi_dung": "á",
+      "tac_gia": "á",
+      "the_loai": "Tiểu thuyết",
+      "ngay_dang": "2024-04-12"
+    },
+    {
+      "id": "ca33",
+      "tieu_de": "a",
+      "noi_dung": "a",
+      "tac_gia": "a",
+      "the_loai": "Tin tức",
+      "ngay_dang": "2024-04-17"
+    },
+    {
+      "id": "9cb7",
+      "tieu_de": "a",
+      "noi_dung": "aadsasd",
+      "tac_gia": "a",
+      "the_loai": "Tin tức",
+      "ngay_dang": "2024-04-17"
+    },
+    {
+      "id": "2efe",
+      "tieu_de": "aádasdsdadasdad",
+      "noi_dung": "aadsasd",
+      "tac_gia": "a",
+      "the_loai": "Tin tức",
+      "ngay_dang": "2024-04-17"
+    },
+    {
+      "tieu_de": "aádasdsdadasdad",
+      "noi_dung": "aadsasd",
+      "tac_gia": "asaddấddddddddddddddd",
+      "the_loai": "Tiểu thuyết",
+      "ngay_dang": "2024-04-19",
+      "id": "277a"
+    },
+    {
+      "tieu_de": "ád",
+      "noi_dung": "ád",
+      "tac_gia": "ád",
+      "the_loai": "Tin tức",
+      "ngay_dang": "2024-04-19",
+      "id": "8d45"
+    }
+  ]
+}

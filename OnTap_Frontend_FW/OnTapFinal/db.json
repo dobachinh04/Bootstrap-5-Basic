@@ -1,0 +1,20 @@
+{
+  "employee": [
+    {
+      "ho_ten": "Đỗ Bá Chínhsdf",
+      "sdt": "037386050345",
+      "email": "dobachinh04@gmail.comsdf",
+      "chuc_vu": "Giám đốc",
+      "ngay_sinh": "2004-01-15",
+      "id": "1"
+    },
+    {
+      "ho_ten": "Đỗ Bá Chính",
+      "sdt": "0373860506",
+      "email": "dobachinh04@gmail.com",
+      "chuc_vu": "Trưởng phòng",
+      "ngay_sinh": "2004-01-01",
+      "id": "2"
+    }
+  ]
+}

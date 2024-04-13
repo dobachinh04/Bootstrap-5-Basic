@@ -1,0 +1,60 @@
+{
+  "employee": [
+    {
+      "id": "1",
+      "ho_ten": "Đỗ Bá Chính",
+      "sdt": "0373860506",
+      "email": "a@gmail.com",
+      "chuc_vu": "Trưởng Phòng",
+      "ngay_sinh": "2004-01-01"
+    },
+    {
+      "id": "2",
+      "ho_ten": "Đỗ Bá Chính",
+      "sdt": "0373860506",
+      "email": "a@gmail.com",
+      "chuc_vu": "Trưởng Phòng",
+      "ngay_sinh": "2004-01-01"
+    },
+    {
+      "id": "abd6",
+      "ho_ten": "ád",
+      "sdt": "324",
+      "email": "ư@gmail.com",
+      "chuc_vu": "Trưởng Phòng",
+      "ngay_sinh": "2024-04-04T17:00:00.000Z"
+    },
+    {
+      "id": "6b8e",
+      "ho_ten": "sad",
+      "sdt": "324",
+      "email": "324@gmail.com",
+      "chuc_vu": "Nhân Viên",
+      "ngay_sinh": "2024-04-16"
+    },
+    {
+      "id": "8cdb",
+      "ho_ten": "Đỗ Bá Chính",
+      "sdt": "0373860506",
+      "email": "a@gmail.com",
+      "chuc_vu": "Trưởng Phòng",
+      "ngay_sinh": "2004-01-16"
+    },
+    {
+      "id": "1edc",
+      "ho_ten": "Đỗ Bá Chính",
+      "sdt": "0373860506",
+      "email": "a@gmail.com",
+      "chuc_vu": "Trưởng Phòng",
+      "ngay_sinh": "2003-12-30"
+    },
+    {
+      "id": "c998",
+      "ho_ten": "Đỗ Bá Chính",
+      "sdt": "0373860506",
+      "email": "a@gmail.com",
+      "chuc_vu": "Trưởng Phòng",
+      "ngay_sinh": "2003-12-06"
+    }
+  ]
+}

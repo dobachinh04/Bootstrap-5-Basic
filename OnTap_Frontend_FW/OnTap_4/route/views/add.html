@@ -1,0 +1,49 @@
+<h1>{{title}}</h1>
+<form ng-submit="addPost()">
+  <div class="mb-3">
+    <label class="form-label">Tiêu Đề</label>
+    <input type="text" class="form-control" ng-model="post.tieu_de" />
+    <span class="text-danger" ng-if="validate.tieu_de"
+      >{{validate.tieu_de}}</span
+    >
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Nội Dung</label>
+    <input type="text" class="form-control" ng-model="post.noi_dung" />
+    <span class="text-danger" ng-if="validate.noi_dung"
+      >{{validate.tieu_de}}</span
+    >
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Tác Giả</label>
+    <input type="text" class="form-control" ng-model="post.tac_gia" />
+    <span class="text-danger" ng-if="validate.tac_gia"
+      >{{validate.tieu_de}}</span
+    >
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Thể Loại</label>
+    <select class="form-select" ng-model="post.the_loai">
+      <option value="Tin tức">Tin tức</option>
+      <option value="Truyện ngắn">Truyện ngắn</option>
+      <option value="Tiểu thuyết">Tiểu thuyết</option>
+    </select>
+    <span class="text-danger" ng-if="validate.the_loai"
+      >{{validate.the_loai}}</span
+    >
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Ngày Đăng</label>
+    <input type="date" class="form-control" ng-model="post.ngay_dang" />
+    <span class="text-danger" ng-if="validate.ngay_dang"
+      >{{validate.tieu_de}}</span
+    >
+  </div>
+
+  <a href="#!/list-post" class="btn btn-secondary"><-- Quay Lại</a>
+  <button type="submit" class="btn btn-primary">Thêm Mới</button>
+</form>

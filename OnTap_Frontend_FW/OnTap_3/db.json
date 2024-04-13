@@ -1,0 +1,36 @@
+{
+  "employee": [
+    {
+      "id": "1",
+      "ho_ten": "Đỗ Bá Chính",
+      "sdt": "0373860506",
+      "email": "a@gmail.com",
+      "chuc_vu": "Trưởng Phòng",
+      "ngay_sinh": "2004-01-01"
+    },
+    {
+      "ho_ten": "ád",
+      "sdt": "4",
+      "email": "2@gmail.com",
+      "chuc_vu": "Giám Đốc",
+      "ngay_sinh": "2024-05-09",
+      "id": "2"
+    },
+    {
+      "id": "b64f",
+      "ho_ten": "ád",
+      "sdt": "áds",
+      "email": "sad",
+      "chuc_vu": "Giám Đốc",
+      "ngay_sinh": "2024-04-11"
+    },
+    {
+      "id": "96e5",
+      "ho_ten": "ád",
+      "sdt": "23",
+      "email": "ads@gmail.com",
+      "chuc_vu": "Trưởng Phòng",
+      "ngay_sinh": "2024-04-05"
+    }
+  ]
+}

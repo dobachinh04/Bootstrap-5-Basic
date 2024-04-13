@@ -1,0 +1,36 @@
+<h1>{{title}}</h1>
+<a href="#!/post/add"><button class="btn btn-primary my-3">Thêm Mới</button></a>
+<table class="table table-bordered table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Tiêu Đề</th>
+      <th scope="col">Nội Dung</th>
+      <th scope="col">Tác Giả</th>
+      <th scope="col">Thể Loại</th>
+      <th scope="col">Ngày Đăng</th>
+      <th scope="col">Hành ĐỘng</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="post in postList">
+    <tr>
+      <th scope="row">{{$index + 1}}</th>
+      <td>{{post.tieu_de}}</td>
+      <td>{{post.noi_dung}}</td>
+      <td>{{post.tac_gia}}</td>
+      <td>{{post.the_loai}}</td>
+      <td>{{post.ngay_dang}}</td>
+      <td>
+        <a href="#!/detail/post/{{post.id}}"
+          ><button class="btn btn-primary">Chi Tiết</button></a
+        >
+        <a href="#!/edit/post/{{post.id}}"
+          ><button class="btn btn-warning">Sửa</button></a
+        >
+        <button class="btn btn-danger" ng-click="deletePost(post.id)">
+          Xóa
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

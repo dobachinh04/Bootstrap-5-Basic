@@ -1,0 +1,28 @@
+{
+  "employee": [
+    {
+      "id": "1",
+      "ho_ten": "Nguyễn Văn A",
+      "sdt": "0373860506",
+      "email": "123@gmail.com",
+      "chuc_vu": "Trưởng Phòng",
+      "ngay_sinh": "2024-04-09"
+    },
+    {
+      "ho_ten": "Nguyễn Văn Baaadw",
+      "sdt": "0373860506",
+      "email": "123@gmail.com",
+      "chuc_vu": "Trưởng Phòng",
+      "ngay_sinh": "2024-04-30",
+      "id": "2"
+    },
+    {
+      "ho_ten": "gagaga",
+      "sdt": "3242",
+      "email": "a@gmail.com",
+      "chuc_vu": "Nhân Viên",
+      "ngay_sinh": "2024-05-09",
+      "id": "3476"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<h1>{{title}}</h1>
+<a href="#!/employee/add"
+  ><button class="btn btn-primary my-3">Thêm Mới</button></a
+>
+<table class="table table-bordered table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Họ Tên</th>
+      <th scope="col">SĐT</th>
+      <th scope="col">Email</th>
+      <th scope="col">Chức Vụ</th>
+      <th scope="col">Ngày Sinh</th>
+      <th scope="col">Hành Động</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="employee in employeeList">
+    <tr>
+      <th scope="row">{{$index + 1}}</th>
+      <td>{{employee.ho_ten}}</td>
+      <td>{{employee.sdt}}</td>
+      <td>{{employee.email}}</td>
+      <td>{{employee.chuc_vu}}</td>
+      <td>{{employee.ngay_sinh}}</td>
+      <td>
+        <a href="#!/detail/employee/{{employee.id}}"
+          ><button class="btn btn-primary">Chi Tiết</button></a
+        >
+        <a href="#!/edit/employee/{{employee.id}}"
+          ><button class="btn btn-warning">Sửa</button></a
+        >
+        <button class="btn btn-danger" ng-click="deleteEmployee(employee.id)">
+          Xóa
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

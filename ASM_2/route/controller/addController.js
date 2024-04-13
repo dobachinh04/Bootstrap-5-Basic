@@ -26,6 +26,7 @@ window.addController = function ($scope, $http, $location) {
       check = false;
       $scope.checkForm.type = true;
     }
+    
 
     if (
       !$scope.book ||
