@@ -26,14 +26,21 @@
       <option value="Nhân Viên">Nhân Viên</option>
       <option value="Giám Đốc">Giám Đốc</option>
     </select>
-    <span class="text-danger" ng-if="validate.chuc_vu">{{validate.chuc_vu}}</span>
+    <span class="text-danger" ng-if="validate.chuc_vu"
+      >{{validate.chuc_vu}}</span
+    >
   </div>
 
   <div class="mb-3">
     <label class="form-label">Ngày Sinh</label>
     <input type="date" class="form-control" ng-model="employee.ngay_sinh" />
-    <span class="text-danger" ng-if="validate.ngay_sinh">{{validate.ngay_sinh}}</span>
+    <span class="text-danger" ng-if="validate.ngay_sinh"
+      >{{validate.ngay_sinh}}</span
+    >
   </div>
 
+  <a href="#!/employee/list"
+    ><button class="btn btn-secondary">Quay Lại</button></a
+  >
   <button type="submit" class="btn btn-primary">Thêm Mới</button>
 </form>
