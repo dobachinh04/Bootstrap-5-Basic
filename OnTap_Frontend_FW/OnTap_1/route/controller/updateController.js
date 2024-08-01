@@ -1,5 +1,6 @@
 window.updateController = function ($scope, $http, $location, $routeParams) {
   $scope.title = "Cập Nhật Nhân Viên";
+  
   let apiEmployee = "http://localhost:3000/employee";
 
   let id = $routeParams.id;
